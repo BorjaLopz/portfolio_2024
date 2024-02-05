@@ -1,0 +1,45 @@
+/* App.css */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de las secciones */
+header.displaySection,
+section.displaySection {
+  min-height: 100vh; /* 100% de la altura de la ventana */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+/* section.presentationSection {
+  background-color: rgb(207, 207, 207);
+} */
+
+article.projectSection {
+  background-color: rgb(155, 41, 41);
+}
+
+article.contactSection {
+  background-color: rgb(41, 68, 155);
+}
+
+article.aboutMeSection {
+  background-color: rgb(172, 180, 49);
+}
+
+.contactSection,
+.projectSection,
+.aboutMeSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
