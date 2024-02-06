@@ -5,20 +5,24 @@ import { Link as ScrollLink } from "react-scroll";
 import BackgroundComponent from "../BackgroundComponent/BackgroundComponent";
 BackgroundComponent;
 
-function PresentationComponent() {
+function PresentationComponent({ handleOnClick }) {
   return (
     <section className="displaySection presentationSection">
-      {/* <BackgroundComponent /> */}
       <article className="textPresentation">
         Hola, soy <span className="highlight">Borja López Díaz</span>. <br />
         <p>Soy desarrollador web full stack</p>
       </article>
 
-      <div className="button page-link">
-        <ScrollLink to="AboutMeArticle" smooth={true} duration={300}>
+      <ScrollLink
+        to="AboutMeArticle"
+        smooth={true}
+        duration={300}
+        onClick={() => handleOnClick("AboutMe")}
+      >
+        <div className="button page-link">
           Mira mi trabajo <img className="arrowAnimation" src={arrow} />
-        </ScrollLink>
-      </div>
+        </div>
+      </ScrollLink>
     </section>
   );
 }

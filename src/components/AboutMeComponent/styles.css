@@ -1,0 +1,64 @@
+/* styles.css */
+.aboutMeSection {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto; /* Centra el contenedor en la pantalla */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben en el ancho disponible */
+  justify-content: space-between; /* Espaciado uniforme entre las columnas */
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  gap: 2rem;
+}
+
+.aboutMeSectionChild {
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.titleStyle {
+  color: #444649;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22pt;
+  line-height: 18pt;
+  border-bottom: 4px solid #444649;
+  padding-bottom: 10px;
+  display: inline-block;
+
+  transform: translateX(
+    -2000px
+  ); /* Mueve el elemento hacia la izquierda inicialmente */
+  transition: opacity 0.75s ease, transform 0.5s ease; /* Agrega una transición suave */
+  opacity: 0;
+}
+
+.titleStyle.active {
+  opacity: 1; /* Cuando la clase aparecer se añade, establece la opacidad en 1 */
+  transform: translateX(
+    0
+  ); /* Mueve el elemento de nuevo a su posición original */
+}
+
+/* Seleccionar la primera columna */
+.aboutMeSectionChild:nth-child(1) {
+  margin-top: 2rem;
+  height: 5rem;
+}
+
+.aboutMeSectionChild:nth-child(2) {
+  background-color: #1a1dcf; /* Cambia el color de fondo de la primera columna */
+  height: 12rem;
+}
+
+.aboutMeSectionChild:nth-child(3) {
+  background-color: #cf211e; /* Cambia el color de fondo de la primera columna */
+  height: 80rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilos adicionales según sea necesario */

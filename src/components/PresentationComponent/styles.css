@@ -26,8 +26,7 @@
   border: 2px solid white;
   transition: all 0.5s ease;
 }
-
-.button a {
+a .button {
   display: flex;
   flex-direction: row;
   gap: 1rem;

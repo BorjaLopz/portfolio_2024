@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectComponent() {
   return (
-    <article className="displaySection projectSection">
+    <article className="displaySection projectArticle">
       ProjectComponent
     </article>
   );
