@@ -8,7 +8,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 
-  background-color: black;
+  background-color: #242424;
 }
 
 .textPresentation {
@@ -18,7 +18,7 @@
 }
 
 .highlight {
-  color: #4343ff;
+  color: #e31b6d;
 }
 
 .button {
@@ -38,8 +38,8 @@ a .button {
 }
 
 .button:hover {
-  background-color: #4343ff;
-  border: 2px solid #4343ff;
+  background-color: #04c2c9;
+  border: 2px solid #04c2c9;
 }
 
 .button .arrowAnimation {
@@ -61,7 +61,7 @@ a .button {
 
   .textPresentation {
     font-size: 32pt;
-    line-height: 1rem;
+    line-height: 4rem;
     font-weight: 400;
   }
 
@@ -72,7 +72,6 @@ a .button {
   .button {
     font-size: 20pt;
     padding: 0.8rem 3rem;
-    transition: all 0.5s ease;
   }
 
   .button .arrowAnimation {
@@ -101,7 +100,6 @@ a .button {
   .button {
     font-size: 16pt;
     padding: 0.6rem 2rem;
-    transition: all 0.5s ease;
   }
 
   .button .arrowAnimation {
@@ -131,7 +129,6 @@ a .button {
     font-size: 12pt;
     border: 1px solid white;
     padding: 0.6rem 1.4rem;
-    transition: all 0.5s ease;
   }
 
   .button .arrowAnimation {
