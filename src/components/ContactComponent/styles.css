@@ -1,0 +1,9 @@
+.triangleSection {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #ffffff; /* Color del triángulo */
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}

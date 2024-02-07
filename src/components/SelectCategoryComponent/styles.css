@@ -1,0 +1,35 @@
+.selectCategory {
+  width: 100%;
+}
+
+.selectCategory ul {
+  max-width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.selectCategory ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  height: 100%;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+.selectCategory ul li.active {
+  background-color: var(--highLightColor);
+  color: white;
+}
+
+.selectCategory ul li:hover {
+  background-color: var(--highLightColor);
+  color: white;
+}

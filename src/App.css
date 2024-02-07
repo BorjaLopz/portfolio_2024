@@ -14,6 +14,7 @@
   --complementColorButton: #04c2c9;
   --complementColorGrafic: #12a3a8;
   --backgroundMenu: #1a1e3f;
+  --pruebaBackground: #252934;
 
   --longitudSubrayado: 75px;
 }
@@ -41,22 +42,34 @@ section.displaySection {
   background-color: rgb(207, 207, 207);
 } */
 
-article.projectArticle,
-article.aboutMeArticle,
-article.contactArticle {
+article.aboutMeArticle {
   background: linear-gradient(
     to bottom,
     #ffffff,
-    #fbfbfb
+    #f0f0f0
   ); /* Aquí puedes ajustar los colores según tus preferencias */
   min-height: 100vh;
+}
+
+article.projectArticle {
+  background: linear-gradient(
+    to bottom,
+    #f0f0f0,
+    #ffffff
+  ); /* Aquí puedes ajustar los colores según tus preferencias */
+  min-height: 100vh;
+}
+
+article.contactArticle {
+  background-color: var(--backgroundMenu);
+  min-height: 100vh;
+  position: relative;
 }
 
 .contactArticle,
 .projectArticle,
 .aboutMeArticle {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -96,7 +96,7 @@ function Homepage() {
 
       <Element name="ProjectArticle" id="ProjectArticle">
         <section className="displaySection">
-          <ProjectComponent />
+          <ProjectComponent visited={visitedSections["ProjectArticle"]} />
         </section>
       </Element>
 
