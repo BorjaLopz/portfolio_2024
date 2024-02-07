@@ -1,5 +1,5 @@
 .menuHeader {
-  background-color: rgb(0, 4, 34);
+  background-color: var(--backgroundMenu);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,9 +27,8 @@
 
   min-height: 2.5rem;
 
-  border-bottom: 3px solid #04c2c9;
+  border-bottom: 3px solid var(--complementColorButton);
 }
-
 
 .menuHeader.stickyAfterTransition {
   position: sticky;
@@ -54,9 +53,9 @@
 }
 
 .menuHeader.menuActive menu ul a.linkActive {
-  color: #e31b6d;
+  color: var(--highLightColor);
 }
 
 .menuHeader.menuActive menu ul a:hover {
-  color: #e31b6d;
+  color: var(--highLightColor);
 }

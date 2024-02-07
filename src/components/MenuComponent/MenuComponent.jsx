@@ -45,8 +45,10 @@ function MenuComponent({ currentSection, handleOnClick }) {
             to="AboutMeArticle"
             smooth={true}
             duration={300}
-            onClick={() => handleOnClick("AboutMe")}
-            className={`${currentSection === "AboutMe" ? "linkActive" : ""}`}
+            onClick={() => handleOnClick("AboutMeArticle")}
+            className={`${
+              currentSection === "AboutMeArticle" ? "linkActive" : ""
+            }`}
           >
             Sobre mi
           </ScrollLink>
@@ -55,8 +57,10 @@ function MenuComponent({ currentSection, handleOnClick }) {
             to="ProjectArticle"
             smooth={true}
             duration={300}
-            onClick={() => handleOnClick("Project")}
-            className={`${currentSection === "Project" ? "linkActive" : ""}`}
+            onClick={() => handleOnClick("ProjectArticle")}
+            className={`${
+              currentSection === "ProjectArticle" ? "linkActive" : ""
+            }`}
           >
             Portfolio
           </ScrollLink>
@@ -65,8 +69,10 @@ function MenuComponent({ currentSection, handleOnClick }) {
             to="ContactArticle"
             smooth={true}
             duration={300}
-            onClick={() => handleOnClick("Contact")}
-            className={`${currentSection === "Contact" ? "linkActive" : ""}`}
+            onClick={() => handleOnClick("ContactArticle")}
+            className={`${
+              currentSection === "ContactArticle" ? "linkActive" : ""
+            }`}
           >
             Contacto
           </ScrollLink>

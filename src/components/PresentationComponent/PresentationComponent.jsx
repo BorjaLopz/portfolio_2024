@@ -17,7 +17,7 @@ function PresentationComponent({ handleOnClick }) {
         to="AboutMeArticle"
         smooth={true}
         duration={300}
-        onClick={() => handleOnClick("AboutMe")}
+        onClick={() => handleOnClick("AboutMeArticle")}
       >
         <div className="button page-link">
           Mira mi trabajo <img className="arrowAnimation" src={arrow} />

@@ -11,12 +11,16 @@ function Homepage() {
     "presentationComponentArticle"
   );
   const [isSticky, setIsSticky] = useState(false);
+  const [visitedSections, setVisitedSections] = useState({});
 
   const handleOnClick = (_section) => {
     setCurrentSection(_section);
+    setVisitedSections((prevVisitedSections) => ({
+      ...prevVisitedSections,
+      [_section]: true,
+    }));
   };
 
-  // Cambiamos la currentSection en funcion del scroll que haya en la pagina
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const threshold = 100;
@@ -31,25 +35,32 @@ function Homepage() {
       ContactArticle: document.getElementById("ContactArticle").offsetTop,
     };
 
+    let foundSection = false;
+
     // Determinar la sección visible en función de la posición de desplazamiento
-    if (
-      scrollPosition >= sectionOffsets.presentationComponentArticle &&
-      scrollPosition < sectionOffsets.AboutMeArticle
-    ) {
-      setCurrentSection("presentationComponentArticle");
-    } else if (
-      scrollPosition >= sectionOffsets.AboutMeArticle &&
-      scrollPosition < sectionOffsets.ProjectArticle
-    ) {
-      setCurrentSection("AboutMe");
-    } else if (
-      scrollPosition >= sectionOffsets.ProjectArticle &&
-      scrollPosition < sectionOffsets.ContactArticle
-    ) {
-      setCurrentSection("Project");
-    } else if (scrollPosition >= sectionOffsets.ContactArticle) {
-      setCurrentSection("Contact");
-    }
+    Object.entries(sectionOffsets).forEach(([section, offset]) => {
+      if (
+        scrollPosition >= offset &&
+        scrollPosition < offset + window.innerHeight
+      ) {
+        setCurrentSection(section);
+        foundSection = true;
+      }
+    });
+
+    // Actualizar el estado de las secciones visitadas al hacer scroll hacia abajo
+    Object.entries(sectionOffsets).forEach(([section, offset]) => {
+      if (
+        scrollPosition >= offset &&
+        scrollPosition < offset + window.innerHeight &&
+        !visitedSections[section]
+      ) {
+        setVisitedSections((prevVisitedSections) => ({
+          ...prevVisitedSections,
+          [section]: true,
+        }));
+      }
+    });
   };
 
   useEffect(() => {
@@ -61,7 +72,6 @@ function Homepage() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <>
       {/* <BackgroundComponent /> */}
@@ -80,9 +90,7 @@ function Homepage() {
 
       <Element name="AboutMeArticle" id="AboutMeArticle">
         <section className="displaySection">
-          <AboutMeComponent
-            active={currentSection === "AboutMe" ? "active" : ""}
-          />
+          <AboutMeComponent visited={visitedSections["AboutMeArticle"]} />
         </section>
       </Element>
 
