@@ -92,7 +92,7 @@
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para pantallas con ancho máximo de 600px */
   .skillName {
-    font-size: 8pt;
-    font-weight: 400;
+    font-size: 9pt;
+    font-weight: 500;
   }
 }
