@@ -30,14 +30,15 @@
 
   /* Animacion */
 
-  transform: translateX(2000px);
-
+  transform: translateX(500px);
+  visibility: hidden;
   transition: opacity 0.75s ease, transform 0.5s ease; /* Agrega una transición suave */
   opacity: 0;
 }
 
 .underlineContainer.active {
   opacity: 1;
+  visibility: visible;
   transform: translateX(0);
 }
 
@@ -57,13 +58,14 @@
   position: relative;
 
   transform: translateX(-2000px);
-
+  visibility: hidden;
   transition: opacity 0.75s ease, transform 0.5s ease; /* Agrega una transición suave */
   opacity: 0;
 }
 
 .titleStyle.active {
   opacity: 1;
+  visibility: visible;
   transform: translateX(0);
 }
 
@@ -114,5 +116,4 @@
   padding: 1rem;
   display: grid;
   grid-template-columns: 45% 55%;
-  
 }
