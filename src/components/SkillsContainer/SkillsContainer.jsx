@@ -8,11 +8,11 @@ function SkillsContainer() {
       <ul className="listOfSkills">
         <SkillComponent name={"HTML"} percent={70} />
         <SkillComponent name={"CSS"} percent={60} />
-        <SkillComponent name={"javascript"} percent={75} />
-        <SkillComponent name={"react"} percent={70} />
-        <SkillComponent name={"node.js"} percent={70} />
-        <SkillComponent name={"Mysql"} percent={60} />
-        <SkillComponent name={"git"} percent={70} />
+        <SkillComponent name={"JavaScript"} percent={75} />
+        <SkillComponent name={"ReactJS"} percent={70} />
+        <SkillComponent name={"Node.JS"} percent={70} />
+        <SkillComponent name={"MySQL"} percent={60} />
+        <SkillComponent name={"Git"} percent={70} />
       </ul>
     </section>
   );
