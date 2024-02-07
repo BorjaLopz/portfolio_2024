@@ -1,0 +1,4 @@
+.listOfSkills {
+  display: flex;
+  flex-direction: column;
+}

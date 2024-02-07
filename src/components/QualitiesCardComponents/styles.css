@@ -9,15 +9,62 @@
 }
 
 .qualityCard img {
-  max-width: 8rem;
   object-fit: cover;
 }
 
 .qualityCard h2 {
   font-weight: 600;
-  font-size: 1.6rem;
 }
 
-.qualityCard p {
-  font-size: 1.2rem;
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas con ancho mayor a 1024px */
+
+  .qualityCard img {
+    max-width: 9rem;
+  }
+  .qualityCard h2 {
+    font-size: 1.6rem;
+  }
+
+  .qualityCard p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas con ancho entre 601px y 1024px */
+
+  .qualityCard img {
+    max-width: 8rem;
+  }
+
+  .qualityCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .qualityCard p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas con ancho máximo de 600px */
+
+  .qualityCard {
+    gap: 1rem;
+  }
+
+  .qualityCard img {
+    max-width: 7rem;
+  }
+
+  .qualityCard h2 {
+    font-size: 1.4rem;
+  }
+
+  .qualityCard p {
+    font-size: 1.15rem;
+  }
 }

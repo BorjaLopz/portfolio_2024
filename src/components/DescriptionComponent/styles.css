@@ -3,14 +3,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center; */
+  gap: 2rem;
+}
+
+.descriptionImage .description {
+  font-size: 16pt;
 }
 
 .hexagonImage {
-  --imageSize: 15rem;
+  --imageSize: 14rem;
   align-self: center;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   background-image: url("/Icons/Borja.jpg");
@@ -19,4 +20,39 @@
   max-width: var(--imageSize);
   min-height: var(--imageSize);
   width: var(--imageSize);
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas con ancho mayor a 1024px */
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas con ancho entre 601px y 1024px */
+  .descriptionImage .description {
+    font-size: 14pt;
+  }
+
+  .hexagonImage {
+    --imageSize: 12rem;
+    max-width: var(--imageSize);
+    min-height: var(--imageSize);
+    width: var(--imageSize);
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas con ancho máximo de 600px */
+
+  .descriptionImage .description {
+    font-size: 12pt;
+  }
+
+  .hexagonImage {
+    --imageSize: 10rem;
+    max-width: var(--imageSize);
+    min-height: var(--imageSize);
+    width: var(--imageSize);
+  }
 }
