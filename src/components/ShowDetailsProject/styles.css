@@ -10,11 +10,10 @@
 }
 
 .showDetailsProject .showDetailsArticle {
-  /* background-color: aqua; */
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
 
   min-width: 20rem;
   max-width: 60%;
@@ -27,6 +26,14 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 65% 1fr;
+
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.showDetailsProject .showDetailsArticle.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
 .showDetailsProject .showDetailsArticle img {
@@ -93,7 +100,12 @@
   .showDetailsArticle
   .projectDescription
   .containerShowAndClose
-  .github {
+  .github,
+.showDetailsProject
+  .showDetailsArticle
+  .projectDescription
+  .containerShowAndClose
+  .closeProject {
   min-width: 7rem;
   max-width: 9rem;
   font-weight: 600;
@@ -125,7 +137,12 @@
   .showDetailsArticle
   .projectDescription
   .containerShowAndClose
-  .github:hover {
+  .github:hover,
+.showDetailsProject
+  .showDetailsArticle
+  .projectDescription
+  .containerShowAndClose
+  .closeProject:hover {
   background-color: white;
   color: var(--highLightColor);
 }
@@ -136,6 +153,18 @@
   .containerShowAndClose
   a {
   text-decoration: none;
+}
+
+.showDetailsProject
+  .showDetailsArticle
+  .projectDescription
+  .containerShowAndClose
+  .closeProject {
+  border: none;
+  font-family: "Raleway";
+  font-size: 12pt;
+  max-width: 9rem;
+  cursor: pointer;
 }
 
 /* .closeProject {

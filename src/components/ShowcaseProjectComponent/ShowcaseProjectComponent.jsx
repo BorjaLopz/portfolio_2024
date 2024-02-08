@@ -28,12 +28,16 @@ function ShowcaseProjectComponent({ category }) {
           />
         ))}
       </section>
-      {selectedProject !== null && (
+      <ShowDetailsProject
+        project={selectedProject}
+        handleOnClose={handleOnClose}
+      />
+      {/* {selectedProject !== null && (
         <ShowDetailsProject
           project={selectedProject}
           handleOnClose={handleOnClose}
         />
-      )}
+      )} */}
     </>
   );
 }
