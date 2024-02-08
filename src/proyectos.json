@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Generador de color",
+    "cover": "/images/GeneradorColores.png",
+    "images": ["/images/GeneradorColores.png"],
+    "technology": ["CSS", "HTML", "JavaScript"],
+    "github": "https://github.com/BorjaLopz/ColourGenerator",
+    "deploy": "https://borja-colour-generator.netlify.app/",
+    "description": "Esta aplicación te permite generar colores aleatorios y te muestra su codigo rgb y una muestra de color. Cuando encuentres el color que te encante, tan solo tendrás que pulsar el botón para copiar el código!"
+  },
+
+  {
+    "id": 2,
+    "title": "Aplicación de metereología",
+    "cover": "/images/AplicaciónDeMetereología.png",
+    "images": ["/images/AplicaciónDeMetereología.png"],
+    "technology": ["CSS", "HTML", "JavaScript", "API"],
+    "github": "https://github.com/BorjaLopz/fantastic-fiesta",
+    "deploy": "https://borja-meteoapp.netlify.app",
+    "description": "Esta aplicación te permite averiguar la predicción metereológica en tu ubicación para las próximas horas."
+  },
+
+  {
+    "id": 3,
+    "title": "Skillverse",
+    "cover": "/images/Skillverse_test.png",
+    "images": ["/images/Skillverse_test.png"],
+    "technology": ["JavaScript", "Node.js", "React", "MySQL"],
+    "github": "https://github.com/BorjaLopz/SkillVerse",
+    "description": "Web donde personas que necesiten algún servicio digital puedan pedir ayuda a otros usuarios. Por ejemplo: traducir un texto, editar una foto, revisar un documento, etc. Solo necesidades que puedan realizarse mediante un fichero digital."
+  },
+  {
+    "id": 4,
+    "title": "UniBeerse",
+    "cover": "/images/UniBeerse_test.png",
+    "images": ["/images/UniBeerse_test.png"],
+    "technology": ["JavaScript", "Node.js", "React", "MySQL"],
+    "github": "https://github.com/BorjaLopz/uniBeerse",
+    "deploy": "https://borja-unibeerse.netlify.app/",
+    "description": "Web de cervezas en la cual podras ver todas y cada una de ellas, filtrar por país, estilo, graduación e incluso añadir una nueva entrada a la base de datos."
+  },
+  {
+    "id": 5,
+    "title": "Real Time Chat",
+    "cover": "/images/Real_Time_Chat.png",
+    "images": ["/images/Real_Time_Chat.png"],
+    "technology": ["JavaScript", "CSS", "HTML"],
+    "github": "https://github.com/BorjaLopz/Real-Time-Chat",
+    "description": "Mini proyecto aprendiendo web sockets. "
+  },
+  {
+    "id": 6,
+    "title": "Conversor de monedas",
+    "cover": "/images/Currency-Converter.png",
+    "images": ["/images/Currency-Converter.png"],
+    "technology": ["JavaScript", "CSS", "HTML", "React", "API"],
+    "github": "https://github.com/BorjaLopz/Currency-Converter",
+    "deploy": "https://borja-currency-converter.netlify.app/",
+    "description": "Aplicación que permite calcular el tipo de cambio entre diferentes divisas en tiempo real."
+  },
+  {
+    "id": 7,
+    "title": "Diccionario",
+    "cover": "/images/Diccionary.png",
+    "images": ["/images/Diccionary.png"],
+    "technology": ["JavaScript", "CSS", "HTML", "React", "API"],
+    "github": "https://github.com/BorjaLopz/Diccionary",
+    "deploy": "https://borja-diccionary.netlify.app/",
+    "description": "Aplicación que permite buscar cualquier palabra del diccionario y nos muestra sus significados."
+  },
+  {
+    "id": 8,
+    "title": "Tic Tac Toe",
+    "cover": "/images/Tic-Tac-Toe.png",
+    "images": ["/images/Tic-Tac-Toe.png"],
+    "technology": ["JavaScript", "CSS", "HTML", "React"],
+    "github": "https://github.com/BorjaLopz/tic-tac-toe",
+    "deploy": "https://borja-tic-tac-toe.netlify.app/",
+    "description": "Pequeño juego de tres en raya."
+  },
+  {
+    "id": 9,
+    "title": "Neflis",
+    "cover": "/images/Neflis.png",
+    "images": ["/images/Neflis.png"],
+    "technology": ["JavaScript", "APIs", "React"],
+    "github": "https://github.com/BorjaLopz/movie-app",
+    "deploy": "https://borja-neflis.netlify.app/",
+    "description": "Aplicación que nos permite ver y filtrar películas. En el futuro podremos ver series, incluso tener nuestra propia cuenta para poder tener un seguimiento de peliculas que queremos ver o un listado de nuestras peliculas favoritas."
+  }
+]

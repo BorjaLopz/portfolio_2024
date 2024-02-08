@@ -8,9 +8,10 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  position: relative;
 }
 
 .selectCategory ul li {
@@ -20,16 +21,27 @@
   min-width: 20%;
   height: 100%;
   cursor: pointer;
+  border-radius: 5px;
+  /* color: black; */
+  z-index: 2;
 
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 .selectCategory ul li.active {
-  background-color: var(--highLightColor);
+  /* background-color: var(--highLightColor); */
   color: white;
+  cursor: initial;
 }
 
-.selectCategory ul li:hover {
+/* .selectCategory ul li:hover {
   background-color: var(--highLightColor);
   color: white;
+} */
+
+.selectCategory ul li.bgSelect {
+  position: absolute;
+  background-color: var(--highLightColor);
+  z-index: 0;
+  transition: all 0.5s ease;
 }

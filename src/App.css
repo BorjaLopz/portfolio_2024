@@ -51,7 +51,7 @@ article.aboutMeArticle {
   min-height: 100vh;
 }
 
-article.projectArticle {
+.projectSection {
   background: linear-gradient(
     to bottom,
     #f0f0f0,
@@ -67,7 +67,7 @@ article.contactArticle {
 }
 
 .contactArticle,
-.projectArticle,
+.ProjectArticle,
 .aboutMeArticle {
   width: 100%;
   display: flex;

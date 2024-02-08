@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import SelectCategoryComponent from "../SelectCategoryComponent/SelectCategoryComponent";
+import ShowcaseProjectComponent from "../ShowcaseProjectComponent/ShowcaseProjectComponent";
 
 function ProjectComponent({ visited }) {
-  const handleSelect = () => {};
+  const [categorySelected, setCategorySelected] = useState("Todos");
+  const handleSelect = (_category) => {
+    setCategorySelected(_category);
+    console.log(`Categoria seleccionada desde ProjectComponent: ${_category}`);
+  };
   return (
-    <article className="projectSection">
+    <section className="projectSection">
       <section className="aboutMeSectionChild title">
         <h2 className={`titleStyle ${visited ? "active" : ""}`}>Proyectos</h2>
         <div className={`underlineContainer ${visited ? "active" : ""}`}></div>
@@ -13,9 +18,9 @@ function ProjectComponent({ visited }) {
 
       <section className="showcaseProjects">
         <SelectCategoryComponent handleSelect={handleSelect} />
-        <div>prueba</div>
+        <ShowcaseProjectComponent category={categorySelected} />
       </section>
-    </article>
+    </section>
   );
 }
 

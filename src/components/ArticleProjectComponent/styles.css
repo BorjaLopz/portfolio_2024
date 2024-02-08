@@ -1,0 +1,114 @@
+.showcaseProjectSection article {
+  min-width: 20rem;
+  min-height: 20rem;
+  width: 5rem;
+  height: 5rem;
+  /* border: 1px solid black; */
+}
+
+.showcaseProjectSection .articleProject img {
+  min-width: 20rem;
+  min-height: 20rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+.showcaseProjectSection .articleProject {
+  position: relative;
+}
+
+.showcaseProjectSection .articleProject .hoverProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1; /* CAMBIAR VISIBILIDAD DESPUES */
+  transition: all 0.5s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.showcaseProjectSection .articleProject:hover .hoverProject {
+  visibility: visible;
+  opacity: 1;
+}
+
+.showcaseProjectSection .articleProject .hoverProject .titleAndTechnology h3 {
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.showcaseProjectSection .articleProject .hoverProject .titleAndTechnology h5 {
+  font-size: 12pt;
+  font-weight: 500;
+  color: var(--highLightColor);
+  margin-top: 0.6rem;
+}
+
+.showcaseProjectSection .articleProject .hoverProject .titleAndTechnology {
+  transform: translateY(-60px);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.showcaseProjectSection
+  .articleProject:hover
+  .hoverProject
+  .titleAndTechnology {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.showcaseProjectSection .articleProject .hoverProject .buttonProject {
+  transform: translateY(60px);
+  transition: all 0.5s ease;
+  opacity: 0;
+
+  font-size: 16pt;
+  max-width: 10rem;
+}
+
+.showcaseProjectSection
+  .articleProject
+  .hoverProject
+  .buttonProject
+  .buttonKnowMore {
+  padding: 0.4rem 0.7rem;
+  border: 2px solid var(--highLightColor);
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.showcaseProjectSection
+  .articleProject
+  .hoverProject
+  .buttonProject
+  .buttonKnowMore:hover {
+  background-color: var(--highLightColor);
+  color: white;
+  cursor: pointer;
+}
+
+.showcaseProjectSection .articleProject:hover .hoverProject .buttonProject {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.showcaseProjectSection .articleProject:hover img {
+  opacity: 0;
+}
