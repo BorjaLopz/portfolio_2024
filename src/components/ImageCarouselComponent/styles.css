@@ -1,0 +1,95 @@
+/* FLECHAS  HACIA ATRAS Y DELANTE */
+
+.carouselContainer .arrowLeft,
+.carouselContainer .arrowRight {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bgTraslucid);
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.carouselContainer svg {
+  max-width: 2rem;
+}
+
+.carouselContainer .arrowRight {
+  /* Configura el ícono normal como fondo por defecto */
+  background-image: url("/Icons/ArrowRight.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Ajusta el tamaño y otras propiedades según tus necesidades */
+  transition: all 0.3s ease;
+}
+
+.carouselContainer .arrowLeft.hovered,
+.carouselContainer .arrowRight.hovered {
+  background-color: white;
+}
+
+.carouselContainer .arrowLeft {
+  /* Configura el ícono normal como fondo por defecto */
+  background-image: url("/Icons/ArrowLeft.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Ajusta el tamaño y otras propiedades según tus necesidades */
+  transition: all 0.3s ease;
+}
+
+.carouselContainer .arrowRight.hovered {
+  /* Cambia el ícono cuando está en estado de hover */
+  background-image: url("/Icons/ArrowRight-Hover.svg");
+}
+
+.carouselContainer .arrowLeft.hovered {
+  /* Cambia el ícono cuando está en estado de hover */
+  background-image: url("/Icons/ArrowLeft-Hover.svg");
+}
+
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
+
+/* NUEVO */
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  max-height: 100%;
+}
+
+.showDetailsProject .showDetailsArticle img {
+  height: auto;
+}
+
+.carouselTrack img {
+  max-height: 100% !important;
+}
+
+.slide {
+  flex: 0 0 auto; /* Evita que las imágenes se ajusten automáticamente */
+  width: 100%;
+  height: auto;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}

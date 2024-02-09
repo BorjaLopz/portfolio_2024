@@ -34,10 +34,15 @@
     "id": 4,
     "title": "UniBeerse",
     "cover": "/images/UniBeerse_test.png",
-    "images": ["/images/UniBeerse_test.png"],
+    "images": [
+      "/images/UniBeerse_test.png",
+      "/images/Skillverse_test.png",
+      "/images/AplicaciónDeMetereología.png"
+    ],
     "technology": ["JavaScript", "Node.js", "React", "MySQL"],
     "github": "https://github.com/BorjaLopz/uniBeerse",
     "deploy": "https://borja-unibeerse.netlify.app/",
+    "shortDescription": "Base de datos de cervezas",
     "description": "Web de cervezas en la cual podras ver todas y cada una de ellas, filtrar por país, estilo, graduación e incluso añadir una nueva entrada a la base de datos."
   },
   {
