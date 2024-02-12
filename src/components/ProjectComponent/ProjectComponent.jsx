@@ -7,7 +7,6 @@ function ProjectComponent({ visited }) {
   const [categorySelected, setCategorySelected] = useState("Todos");
   const handleSelect = (_category) => {
     setCategorySelected(_category);
-    console.log(`Categoria seleccionada desde ProjectComponent: ${_category}`);
   };
   return (
     <section className="projectSection">

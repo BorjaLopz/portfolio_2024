@@ -22,6 +22,15 @@
 
 .showcaseProjectSection .articleProject {
   position: relative;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.showcaseProjectSection .articleProject.hidden {
+  opacity: 0;
+  transform: scale(0);
 }
 
 .showcaseProjectSection .articleProject .hoverProject {

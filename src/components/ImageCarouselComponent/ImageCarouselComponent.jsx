@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 
-function ImageCarouselComponent({ projectImages, projectName }) {
+function ImageCarouselComponent({ projectImages, projectName, projectID }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLHovered, setIsLHovered] = useState(false);
   const [isRHovered, setIsRHovered] = useState(false);
@@ -17,6 +17,10 @@ function ImageCarouselComponent({ projectImages, projectName }) {
       prevIndex === projectImages?.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [projectID]);
 
   return (
     <>

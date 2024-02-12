@@ -7,7 +7,8 @@
     "technology": ["CSS", "HTML", "JavaScript"],
     "github": "https://github.com/BorjaLopz/ColourGenerator",
     "deploy": "https://borja-colour-generator.netlify.app/",
-    "description": "Esta aplicación te permite generar colores aleatorios y te muestra su codigo rgb y una muestra de color. Cuando encuentres el color que te encante, tan solo tendrás que pulsar el botón para copiar el código!"
+    "description": "Esta aplicación te permite generar colores aleatorios y te muestra su codigo rgb y una muestra de color. Cuando encuentres el color que te encante, tan solo tendrás que pulsar el botón para copiar el código!",
+    "category": ["Javascript"]
   },
 
   {
@@ -18,7 +19,8 @@
     "technology": ["CSS", "HTML", "JavaScript", "API"],
     "github": "https://github.com/BorjaLopz/fantastic-fiesta",
     "deploy": "https://borja-meteoapp.netlify.app",
-    "description": "Esta aplicación te permite averiguar la predicción metereológica en tu ubicación para las próximas horas."
+    "description": "Esta aplicación te permite averiguar la predicción metereológica en tu ubicación para las próximas horas.",
+    "category": ["Javascript"]
   },
 
   {
@@ -28,7 +30,8 @@
     "images": ["/images/Skillverse_test.png"],
     "technology": ["JavaScript", "Node.js", "React", "MySQL"],
     "github": "https://github.com/BorjaLopz/SkillVerse",
-    "description": "Web donde personas que necesiten algún servicio digital puedan pedir ayuda a otros usuarios. Por ejemplo: traducir un texto, editar una foto, revisar un documento, etc. Solo necesidades que puedan realizarse mediante un fichero digital."
+    "description": "Web donde personas que necesiten algún servicio digital puedan pedir ayuda a otros usuarios. Por ejemplo: traducir un texto, editar una foto, revisar un documento, etc. Solo necesidades que puedan realizarse mediante un fichero digital.",
+    "category": ["NodeJS", "React"]
   },
   {
     "id": 4,
@@ -43,7 +46,8 @@
     "github": "https://github.com/BorjaLopz/uniBeerse",
     "deploy": "https://borja-unibeerse.netlify.app/",
     "shortDescription": "Base de datos de cervezas",
-    "description": "Web de cervezas en la cual podras ver todas y cada una de ellas, filtrar por país, estilo, graduación e incluso añadir una nueva entrada a la base de datos."
+    "description": "Web de cervezas en la cual podras ver todas y cada una de ellas, filtrar por país, estilo, graduación e incluso añadir una nueva entrada a la base de datos.",
+    "category": ["NodeJS", "React"]
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "images": ["/images/Real_Time_Chat.png"],
     "technology": ["JavaScript", "CSS", "HTML"],
     "github": "https://github.com/BorjaLopz/Real-Time-Chat",
-    "description": "Mini proyecto aprendiendo web sockets. "
+    "description": "Mini proyecto aprendiendo web sockets. ",
+    "category": ["Javascript"]
   },
   {
     "id": 6,
@@ -62,7 +67,8 @@
     "technology": ["JavaScript", "CSS", "HTML", "React", "API"],
     "github": "https://github.com/BorjaLopz/Currency-Converter",
     "deploy": "https://borja-currency-converter.netlify.app/",
-    "description": "Aplicación que permite calcular el tipo de cambio entre diferentes divisas en tiempo real."
+    "description": "Aplicación que permite calcular el tipo de cambio entre diferentes divisas en tiempo real.",
+    "category": ["React"]
   },
   {
     "id": 7,
@@ -72,7 +78,8 @@
     "technology": ["JavaScript", "CSS", "HTML", "React", "API"],
     "github": "https://github.com/BorjaLopz/Diccionary",
     "deploy": "https://borja-diccionary.netlify.app/",
-    "description": "Aplicación que permite buscar cualquier palabra del diccionario y nos muestra sus significados."
+    "description": "Aplicación que permite buscar cualquier palabra del diccionario y nos muestra sus significados.",
+    "category": ["React"]
   },
   {
     "id": 8,
@@ -82,7 +89,8 @@
     "technology": ["JavaScript", "CSS", "HTML", "React"],
     "github": "https://github.com/BorjaLopz/tic-tac-toe",
     "deploy": "https://borja-tic-tac-toe.netlify.app/",
-    "description": "Pequeño juego de tres en raya."
+    "description": "Pequeño juego de tres en raya.",
+    "category": ["Javascript"]
   },
   {
     "id": 9,
@@ -92,6 +100,7 @@
     "technology": ["JavaScript", "APIs", "React"],
     "github": "https://github.com/BorjaLopz/movie-app",
     "deploy": "https://borja-neflis.netlify.app/",
-    "description": "Aplicación que nos permite ver y filtrar películas. En el futuro podremos ver series, incluso tener nuestra propia cuenta para poder tener un seguimiento de peliculas que queremos ver o un listado de nuestras peliculas favoritas."
+    "description": "Aplicación que nos permite ver y filtrar películas. En el futuro podremos ver series, incluso tener nuestra propia cuenta para poder tener un seguimiento de peliculas que queremos ver o un listado de nuestras peliculas favoritas.",
+    "category": ["React"]
   }
 ]

@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-function ArticleProjectComponent({ project, handleSelectProject }) {
+function ArticleProjectComponent({
+  project,
+  handleSelectProject,
+  classNameHidden,
+}) {
+
   return (
-    <article className="articleProject">
+    <article
+      className={`articleProject ${classNameHidden}`}
+      style={{
+        order: project?.order,
+      }}
+    >
       <img src={project.cover} alt={`Imagen de ${project.title}`} />
       <section className="hoverProject">
         <div className="titleAndTechnology">

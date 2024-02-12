@@ -2,11 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
 import ImageCarouselComponent from "../ImageCarouselComponent/ImageCarouselComponent";
 
-import arrowRight from "/Icons/ArrowRight.svg";
-import arrowRightHover from "/Icons/ArrowRight-Hover.svg";
-import arrowLeft from "/Icons/ArrowLeft.svg";
-import arrowLeftHover from "/Icons/ArrowLeft-Hover.svg";
-
 function ShowDetailsProject({ project, handleOnClose }) {
   const [isActive, setIsActive] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -32,7 +27,7 @@ function ShowDetailsProject({ project, handleOnClose }) {
       // actualiza el estado para iniciar la animación de cierre
       setTimeout(() => {
         setIsClosing(false);
-      }, 20);
+      }, 500);
     } else {
       // Si se cierra
       setIsClosing(true);
@@ -51,6 +46,7 @@ function ShowDetailsProject({ project, handleOnClose }) {
           <ImageCarouselComponent
             projectImages={project?.images}
             projectName={project?.title}
+            projectID={project?.id}
           />
           <article className="projectDescription">
             <h2>{project?.title}</h2>

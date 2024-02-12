@@ -45,3 +45,34 @@
   z-index: 0;
   transition: all 0.5s ease;
 }
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas con ancho mayor a 1024px */
+  .titleStyle {
+    font-size: 22pt;
+  }
+
+    .selectCategory ul li {
+    font-size: 18pt;
+  }
+  
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas con ancho entre 601px y 1024px */
+    .titleStyle {
+    font-size: 18pt;
+  }
+  .selectCategory ul li {
+    font-size: 14pt;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas con ancho máximo de 600px */
+    .selectCategory ul li {
+    font-size: 11pt;
+  }
+}
