@@ -10,7 +10,7 @@ function ProjectComponent({ visited }) {
   };
   return (
     <section className="projectSection">
-      <section className="aboutMeSectionChild title">
+      <section className="projectSectionChild title">
         <h2 className={`titleStyle ${visited ? "active" : ""}`}>Proyectos</h2>
         <div className={`underlineContainer ${visited ? "active" : ""}`}></div>
       </section>

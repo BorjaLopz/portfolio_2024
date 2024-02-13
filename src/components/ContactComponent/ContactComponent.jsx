@@ -1,11 +1,19 @@
 import React from "react";
 import "./styles.css";
+import FooterComponent from "../FooterComponent/FooterComponent";
+import ContactFormComponent from "../ContactFormComponent/ContactFormComponent";
 
-function ContactComponent() {
+function ContactComponent({ visited }) {
   return (
-    <article className="displaySection contactArticle">
+    <article className="contactArticle">
+      <section className="contactSectionChild title">
+        <h2 className={`titleStyle ${visited ? "active" : ""}`}>Contacto</h2>
+        <div className={`underlineContainer ${visited ? "active" : ""}`}></div>
+      </section>
       <div className="triangleSection"></div>
-      ContactComponent
+      
+      <ContactFormComponent />
+      <FooterComponent />
     </article>
   );
 }

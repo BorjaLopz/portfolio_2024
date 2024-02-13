@@ -25,7 +25,7 @@ function MenuComponent({ currentSection, handleOnClick }) {
       }
       ${transitionEnded ? "stickyAfterTransition" : ""}`}
     >
-      <menu>
+      <menu id="highWidth">
         <ul>
           <ScrollLink
             to="presentationComponentArticle"

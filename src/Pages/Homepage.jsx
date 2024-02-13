@@ -5,6 +5,7 @@ import AboutMeComponent from "../components/AboutMeComponent/AboutMeComponent";
 import ProjectComponent from "../components/ProjectComponent/ProjectComponent";
 import ContactComponent from "../components/ContactComponent/ContactComponent";
 import MenuComponent from "../components/MenuComponent/MenuComponent";
+import HamburguerMenuComponent from "../components/HamburguerMenuComponent/HamburguerMenuComponent";
 
 function Homepage() {
   const [currentSection, setCurrentSection] = useState(
@@ -12,6 +13,7 @@ function Homepage() {
   );
   const [isSticky, setIsSticky] = useState(false);
   const [visitedSections, setVisitedSections] = useState({});
+  const currentWidth = window.innerWidth;
 
   const handleOnClick = (_section) => {
     setCurrentSection(_section);
@@ -83,10 +85,17 @@ function Homepage() {
           <PresentationComponent handleOnClick={handleOnClick} />
         </section>
       </Element>
-      <MenuComponent
-        currentSection={currentSection}
-        handleOnClick={handleOnClick}
-      />
+      {currentWidth > 800 ? (
+        <MenuComponent
+          currentSection={currentSection}
+          handleOnClick={handleOnClick}
+        />
+      ) : (
+        <HamburguerMenuComponent
+          currentSection={currentSection}
+          handleOnClick={handleOnClick}
+        />
+      )}
 
       <Element name="AboutMeArticle" id="AboutMeArticle">
         <section className="displaySection">
@@ -102,7 +111,7 @@ function Homepage() {
 
       <Element name="ContactArticle" id="ContactArticle">
         <section className="displaySection">
-          <ContactComponent />
+          <ContactComponent visited={visitedSections["ContactArticle"]} />
         </section>
       </Element>
     </>

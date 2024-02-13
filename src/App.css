@@ -15,7 +15,7 @@
   --bgTraslucid: #e31b6e28;
   --complementColorButton: #04c2c9;
   --complementColorGrafic: #12a3a8;
-  --backgroundMenu: #1a1e3f;
+  --backgroundMenu: #24263b;
   --pruebaBackground: #252934;
 
   --longitudSubrayado: 75px;
@@ -63,7 +63,7 @@ article.aboutMeArticle {
   margin-bottom: 10rem;
 }
 
-article.contactArticle {
+.contactSection {
   background-color: var(--backgroundMenu);
   min-height: 100vh;
   position: relative;
