@@ -9,8 +9,6 @@ function ShowcaseProjectComponent({ category }) {
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [projectOrder, setProjectOrder] = useState({});
 
-
-
   useEffect(() => {
     const filtered =
       category && category !== "Todos"
@@ -38,7 +36,7 @@ function ShowcaseProjectComponent({ category }) {
         p.order = order;
         order += 1;
       } else {
-        p.order = projects.length - 1;
+        p.order = projects.length - order;
       }
     });
   };

@@ -1,53 +1,34 @@
 /* FLECHAS  HACIA ATRAS Y DELANTE */
-
 .carouselContainer .arrowLeft,
 .carouselContainer .arrowRight {
   position: absolute;
   bottom: 0;
-  background-color: var(--bgTraslucid);
-  min-width: 2rem;
-  min-height: 2rem;
-  padding: 2rem 4rem;
+  background-color: #72727259;
+  min-width: 1rem;
+  min-height: 1rem;
+  padding: 2rem 2rem;
   cursor: pointer;
 
   transition: all 0.3s ease;
 }
 
-.carouselContainer svg {
-  max-width: 2rem;
-}
-
 .carouselContainer .arrowRight {
-  /* Configura el ícono normal como fondo por defecto */
   background-image: url("/Icons/ArrowRight.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* Ajusta el tamaño y otras propiedades según tus necesidades */
   transition: all 0.3s ease;
 }
 
 .carouselContainer .arrowLeft.hovered,
 .carouselContainer .arrowRight.hovered {
-  background-color: white;
+  background-color: #727272d8;
 }
 
 .carouselContainer .arrowLeft {
-  /* Configura el ícono normal como fondo por defecto */
   background-image: url("/Icons/ArrowLeft.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* Ajusta el tamaño y otras propiedades según tus necesidades */
   transition: all 0.3s ease;
-}
-
-.carouselContainer .arrowRight.hovered {
-  /* Cambia el ícono cuando está en estado de hover */
-  background-image: url("/Icons/ArrowRight-Hover.svg");
-}
-
-.carouselContainer .arrowLeft.hovered {
-  /* Cambia el ícono cuando está en estado de hover */
-  background-image: url("/Icons/ArrowLeft-Hover.svg");
 }
 
 .arrowLeft {
@@ -70,6 +51,7 @@
   display: flex;
   transition: transform 0.5s ease-in-out;
   max-height: 100%;
+  height: 100%;
 }
 
 .showDetailsProject .showDetailsArticle img {
@@ -81,7 +63,7 @@
 }
 
 .slide {
-  flex: 0 0 auto; /* Evita que las imágenes se ajusten automáticamente */
+  flex: 0 0 auto;
   width: 100%;
   height: auto;
 }

@@ -9,7 +9,7 @@
 :root {
   /* COLORES */
   --backgroundHomePage: #242424;
-  --highLightColor: #e31b6d;
+  --highLightColor: rgb(227, 27, 109);
   --titleColor: #444649;
   --subtitleColor: #bbbbbb;
   --bgTraslucid: #e31b6e28;
@@ -60,6 +60,7 @@ article.aboutMeArticle {
     #ffffff
   ); /* Aquí puedes ajustar los colores según tus preferencias */
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 article.contactArticle {
