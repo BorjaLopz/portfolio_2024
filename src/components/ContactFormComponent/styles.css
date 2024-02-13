@@ -1,3 +1,26 @@
 #formComponent {
   flex-grow: 1;
+  width: 100% !important;
+}
+
+#formComponent form {
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+
+#formComponent form input {
+  font-family: "Raleway";
+  padding: 5px;
+  font-size: 12pt;
+  min-height: 2rem;
+}
+
+#formComponent textarea {
+  resize: vertical;
+  font-family: "Raleway";
+  padding: 5px;
+  font-size: 12pt;
 }
