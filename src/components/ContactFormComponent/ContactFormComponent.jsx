@@ -26,7 +26,7 @@ function ContactFormComponent() {
         reply_to: formData.email,
         from_name: formData.name,
         to_name: "Borja",
-        message: "Mensaje de prueba",
+        message: formData.message,
       },
       "roG3yC4mwgJKOOJBe"
     );
