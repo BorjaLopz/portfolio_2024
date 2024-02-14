@@ -43,8 +43,12 @@ function SkillsContainer() {
   const isOrderedPercentages = () => {
     const percentages = skills.map((skill) => skill.percent);
     const ascendingOrder = [...percentages].sort((a, b) => a - b);
+    const descendingOrder = [...percentages].sort((a, b) => b - a);
 
-    return JSON.stringify(percentages) === JSON.stringify(ascendingOrder);
+    return (
+      JSON.stringify(percentages) === JSON.stringify(ascendingOrder) ||
+      JSON.stringify(percentages) === JSON.stringify(descendingOrder)
+    );
   };
 
   //Check if device is touchable or not
@@ -55,7 +59,6 @@ function SkillsContainer() {
   return (
     <DndProvider backend={isTouchDevice ? TouchBackend : HTML5Backend}>
       <section className="skillsName">
-        {isTouchDevice ? <p>Es touchable</p> : <p>No es touchable</p>}
         <ul className="listOfSkills">
           {skills.map((skill, index) => (
             <SkillComponent
