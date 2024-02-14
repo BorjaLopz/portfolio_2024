@@ -55,6 +55,7 @@ function SkillsContainer() {
   return (
     <DndProvider backend={isTouchDevice ? TouchBackend : HTML5Backend}>
       <section className="skillsName">
+        {isTouchDevice ? <p>Es touchable</p> : <p>No es touchable</p>}
         <ul className="listOfSkills">
           {skills.map((skill, index) => (
             <SkillComponent
