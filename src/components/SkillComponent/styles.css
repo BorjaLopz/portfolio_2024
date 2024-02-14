@@ -58,7 +58,7 @@
   content: attr(data-percent) "%";
   position: absolute;
   top: 0;
-  right: -50px;
+  right: -5%;
   /* transform: translateX(-50%); */
   color: #fff;
   background-color: #555;

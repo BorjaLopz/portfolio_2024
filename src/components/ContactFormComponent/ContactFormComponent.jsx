@@ -29,7 +29,7 @@ function ContactFormComponent() {
   };
   return (
     <section id="formComponent">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} autoComplete="off">
         <label htmlFor="name">Nombre:</label>
         <input
           type="text"
@@ -63,7 +63,9 @@ function ContactFormComponent() {
           rows={10}
         ></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className="button page-link sendButton">
+          Enviar
+        </button>
       </form>
     </section>
   );

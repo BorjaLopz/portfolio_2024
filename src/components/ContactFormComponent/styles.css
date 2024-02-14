@@ -1,6 +1,7 @@
 #formComponent {
   flex-grow: 1;
   width: 100% !important;
+  margin: 0 0 6rem 0;
 }
 
 #formComponent form {
@@ -9,18 +10,68 @@
   display: flex;
   flex-direction: column;
   font-size: 0;
+  gap: 4px;
 }
 
 #formComponent form input {
   font-family: "Raleway";
-  padding: 5px;
+  padding: 8px;
   font-size: 12pt;
-  min-height: 2rem;
+  min-height: 2.4rem;
+  font-weight: 600;
+
+  color: white;
 }
 
 #formComponent textarea {
   resize: vertical;
   font-family: "Raleway";
-  padding: 5px;
+  padding: 8px;
   font-size: 12pt;
+  font-weight: 600;
+  color: white;
+}
+
+#formComponent form input,
+#formComponent textarea {
+  background-color: var(--backgroundFooter);
+  border: none;
+}
+
+#formComponent form input:focus,
+#formComponent textarea:focus {
+  outline: none;
+}
+
+.sendButton {
+  text-align: center;
+  background-color: transparent;
+  max-width: 25%;
+  font-size: 12pt;
+  margin-left: calc(100% - 25%);
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas con ancho mayor a 1024px */
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas con ancho entre 601px y 1024px */
+  .sendButton {
+    max-width: 30%;
+    font-size: 11pt;
+    margin-left: calc(100% - 30%);
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas con ancho máximo de 600px */
+  .sendButton {
+    max-width: 40%;
+    font-size: 9pt;
+    margin-left: calc(100% - 40%);
+  }
 }

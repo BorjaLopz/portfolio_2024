@@ -8,9 +8,6 @@ function FooterComponent() {
   const fechaActual = new Date();
   const añoActual = fechaActual.getFullYear();
 
-  const handleClick = () => {
-    alert("¡Gracias por visitarnos!");
-  };
 
   return (
     <section className="footerRedes">
@@ -37,7 +34,6 @@ function FooterComponent() {
         to="presentationComponentArticle"
         smooth={true}
         duration={300}
-        onClick={handleClick}
         className="welcomeTop"
       >
         <img src="/Icons/ArrowUp.svg" alt="" />
