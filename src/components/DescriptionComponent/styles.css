@@ -22,6 +22,47 @@
   width: var(--imageSize);
 }
 
+.importantText {
+  position: relative;
+  cursor: pointer;
+  color: var(--highLightColor);
+  font-weight: 800;
+}
+
+.importantText a {
+  color: var(--highLightColor);
+  text-decoration: none;
+}
+
+.importantText::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--highLightColor);
+  animation: underlineAnimation 3s infinite; /* Puedes ajustar la duración según tus preferencias */
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  15% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  85% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 @media only screen and (min-width: 1025px) {
   /* Estilos específicos para pantallas con ancho mayor a 1024px */
 }
