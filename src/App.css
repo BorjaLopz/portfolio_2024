@@ -39,7 +39,7 @@ body {
 /* Estilo de las secciones */
 header.displaySection,
 section.displaySection {
-  min-height: 80vh; /* 100% de la altura de la ventana */
+  min-height: 100vh; /* 100% de la altura de la ventana */
   display: flex;
   justify-content: center;
   align-items: center;

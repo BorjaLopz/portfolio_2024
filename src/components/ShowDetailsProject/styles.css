@@ -226,4 +226,43 @@
   .showDetailsProject .showDetailsArticle .projectDescription p {
     margin-bottom: 1.4rem;
   }
+
+  .showDetailsProject
+    .showDetailsArticle
+    .projectDescription
+    .containerShowAndClose,
+  .showDetailsProject
+    .showDetailsArticle
+    .projectDescription
+    .containerShowAndClose
+    .closeProject {
+    font-size: 8pt;
+  }
+
+  .showDetailsProject
+    .showDetailsArticle
+    .projectDescription
+    .containerShowAndClose
+    .deploy,
+  .showDetailsProject
+    .showDetailsArticle
+    .projectDescription
+    .containerShowAndClose
+    .github,
+  .showDetailsProject
+    .showDetailsArticle
+    .projectDescription
+    .containerShowAndClose
+    .closeProject {
+    min-width: 2rem;
+    max-width: 5rem;
+
+    padding: 0.2rem 0.6rem;
+  }
+
+  .containerShowAndClose a {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
 }
