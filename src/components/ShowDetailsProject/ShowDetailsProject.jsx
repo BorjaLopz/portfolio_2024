@@ -56,7 +56,7 @@ function ShowDetailsProject({ project, handleOnClose }) {
             <div className="containerShowAndClose">
               {project?.deploy && (
                 <a href={project?.deploy} className="deploy" target="_blank">
-                  <img src="/Icons/ExternalLink.svg" alt="" />
+                  {/* <img src="/Icons/ExternalLink.svg" alt="" /> */}
                   deploy
                 </a>
               )}

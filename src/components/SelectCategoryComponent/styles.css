@@ -24,6 +24,7 @@
   border-radius: 5px;
   /* color: black; */
   z-index: 2;
+  text-transform: uppercase;
 
   transition: all 0.8s ease;
 }

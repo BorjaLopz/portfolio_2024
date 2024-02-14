@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function ContactFormComponent() {
   const [formData, setFormData] = useState({
@@ -16,11 +18,27 @@ function ContactFormComponent() {
     });
   };
 
+  const handleSubmitMail = () => {
+    emailjs.send(
+      "service_znlpdrq",
+      "template_lt8m9yq",
+      {
+        reply_to: formData.email,
+        from_name: formData.name,
+        to_name: "Borja",
+        message: "Mensaje de prueba",
+      },
+      "roG3yC4mwgJKOOJBe"
+    );
+
+    toast.success("Email enviado correctamente");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a un servidor
-    console.log("Datos del formulario:", formData);
-    // También puedes resetear el formulario si es necesario
+
+    handleSubmitMail();
+    // Seteamos a null el formData
     setFormData({
       name: "",
       email: "",
