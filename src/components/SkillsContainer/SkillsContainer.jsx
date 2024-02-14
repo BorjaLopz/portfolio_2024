@@ -32,7 +32,7 @@ function SkillsContainer() {
     const isOrdered = isOrderedPercentages();
     if (isOrdered && !toastShown) {
       setToastShown(true);
-      toast.success("¡Porcentajes ordenados de mayor a menor o viceversa!");
+      toast.success("¡Habilidades ordenadas!");
     } else if (!isOrdered) {
       setToastShown(false);
     }
