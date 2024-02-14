@@ -27,7 +27,7 @@
 }
 
 .contactSectionChild.title {
-  margin: 8rem 0 4rem 0;
+  margin: 8rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,5 +61,14 @@
   .triangleSection {
     top: -1px;
     clip-path: polygon(0 0, 100% 0, 50% 75%);
+  }
+
+  .contactArticle h4 {
+    font-size: 10pt;
+    margin: 0 0 2rem;
+  }
+
+  .contactSectionChild.title {
+    margin: 8rem 0 1rem 0;
   }
 }
