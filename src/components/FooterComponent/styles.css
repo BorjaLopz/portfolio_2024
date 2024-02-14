@@ -1,5 +1,5 @@
 .footerRedes {
-  min-height: 15rem;
+  min-height: 10rem;
   max-height: 15rem;
   background-color: var(--backgroundFooter);
   width: 100% !important;
@@ -121,10 +121,9 @@
 /* Estilos para pantallas medianas */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   /* Estilos específicos para pantallas con ancho entre 601px y 1024px */
-    .footerRedes .redes {
+  .footerRedes .redes {
     width: 60%;
   }
-
 }
 
 /* Estilos para pantallas pequeñas */
