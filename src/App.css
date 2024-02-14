@@ -39,7 +39,7 @@ body {
 /* Estilo de las secciones */
 header.displaySection,
 section.displaySection {
-  min-height: 100vh; /* 100% de la altura de la ventana */
+  min-height: 80vh; /* 100% de la altura de la ventana */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ article.aboutMeArticle {
     #ffffff,
     #f0f0f0
   ); /* Aquí puedes ajustar los colores según tus preferencias */
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .projectSection {
@@ -66,13 +66,13 @@ article.aboutMeArticle {
     #f0f0f0,
     #ffffff
   ); /* Aquí puedes ajustar los colores según tus preferencias */
-  min-height: 100vh;
+  min-height: 80vh;
   margin-bottom: 10rem;
 }
 
 .contactSection {
   background-color: var(--backgroundMenu);
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
 }
 

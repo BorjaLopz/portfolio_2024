@@ -40,7 +40,7 @@
   margin-top: 2rem;
   width: 90%;
   margin: auto;
-  min-height: 100vh;
+  min-height: 80vh;
   display: grid;
   grid-template-rows: 2.4rem 1fr;
   grid-template-columns: 1fr;
