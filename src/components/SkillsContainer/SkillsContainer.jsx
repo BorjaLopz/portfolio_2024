@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import SkillComponent from "../SkillComponent/SkillComponent";
 import { DndProvider } from "react-dnd";
+import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import toast from "react-hot-toast";
 
@@ -16,6 +17,7 @@ function SkillsContainer() {
     { id: 7, name: "Git", percent: 70 },
   ]);
   const [toastShown, setToastShown] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   const handleDrop = (draggedItem, droppedIndex) => {
     const updatedSkills = [...skills];
@@ -45,8 +47,13 @@ function SkillsContainer() {
     return JSON.stringify(percentages) === JSON.stringify(ascendingOrder);
   };
 
+  //Check if device is touchable or not
+  useEffect(() => {
+    setIsTouchDevice("ontouchstart" in document.documentElement);
+  }, []);
+
   return (
-    <DndProvider backend={HTML5Backend}>
+    <DndProvider backend={isTouchDevice ? TouchBackend : HTML5Backend}>
       <section className="skillsName">
         <ul className="listOfSkills">
           {skills.map((skill, index) => (
