@@ -102,11 +102,15 @@
   {
     "id": 9,
     "title": "Neflis",
-    "cover": "/images/Neflis.png",
-    "images": ["/images/Neflis.png"],
+    "cover": "/images/movie_cover.png",
+    "images": [
+      "/images/movie_1.png",
+      "/images/movie_2.png",
+      "/images/movie_3.png"
+    ],
     "technology": ["JavaScript", "APIs", "React"],
     "github": "https://github.com/BorjaLopz/movie-app",
-    "deploy": "https://borja-neflis.netlify.app/",
+    "deploy": "https://borja-movies.netlify.app/",
     "description": "Aplicación que nos permite ver y filtrar películas. En el futuro podremos ver series, incluso tener nuestra propia cuenta para poder tener un seguimiento de peliculas que queremos ver o un listado de nuestras peliculas favoritas.",
     "category": ["React"]
   }
