@@ -1,21 +1,26 @@
 [
   {
     "id": 1,
-    "title": "Generador de color",
-    "cover": "/images/GeneradorColores.png",
-    "images": ["/images/GeneradorColores.png"],
+    "title": "Generador de colores",
+    "cover": "/images/colores_cover.png",
+    "images": [
+      "/images/colores_1.png",
+      "/images/colores_2.png",
+      "/images/colores_3.png"
+    ],
     "technology": ["CSS", "HTML", "JavaScript"],
     "github": "https://github.com/BorjaLopz/ColourGenerator",
     "deploy": "https://borja-colour-generator.netlify.app/",
-    "description": "Esta aplicación te permite generar colores aleatorios y te muestra su codigo rgb y una muestra de color. Cuando encuentres el color que te encante, tan solo tendrás que pulsar el botón para copiar el código!",
+    "shortDescription": "Colores vibrantes en un clic.",
+    "description": "Explora la creatividad cromática con Generador de Colores. Genera colores aleatorios, visualiza su código RGB y muestra de color. ¡Copia el código con un solo clic!",
     "category": ["Javascript"]
   },
 
   {
     "id": 2,
     "title": "Aplicación de metereología",
-    "cover": "/images/AplicaciónDeMetereología.png",
-    "images": ["/images/AplicaciónDeMetereología.png"],
+    "cover": "/images/meteo_cover.png",
+    "images": ["/images/meteo_1.png", "/images/meteo_2.png"],
     "technology": ["CSS", "HTML", "JavaScript", "API"],
     "github": "https://github.com/BorjaLopz/fantastic-fiesta",
     "deploy": "https://borja-meteoapp.netlify.app",
@@ -36,17 +41,19 @@
   {
     "id": 4,
     "title": "UniBeerse",
-    "cover": "/images/UniBeerse_test.png",
+    "cover": "/images/unibeerse_cover.png",
     "images": [
-      "/images/UniBeerse_test.png",
-      "/images/Skillverse_test.png",
-      "/images/AplicaciónDeMetereología.png"
+      "/images/unibeerse_1.png",
+      "/images/unibeerse_2.png",
+      "/images/unibeerse_3.png",
+      "/images/unibeerse_4.png",
+      "/images/unibeerse_5.png"
     ],
     "technology": ["JavaScript", "Node.js", "React", "MySQL"],
     "github": "https://github.com/BorjaLopz/uniBeerse",
     "deploy": "https://borja-unibeerse.netlify.app/",
     "shortDescription": "Base de datos de cervezas",
-    "description": "Web de cervezas en la cual podras ver todas y cada una de ellas, filtrar por país, estilo, graduación e incluso añadir una nueva entrada a la base de datos.",
+    "description": "UniBeerse te brinda acceso al fascinante universo cervecero. Explora diversas cervezas, filtra por nombre, país y estilo. Inicia sesión para comentar y reportar problemas. Sumérgete en la experiencia única de UniBeerse.",
     "category": ["NodeJS", "React"]
   },
   {
