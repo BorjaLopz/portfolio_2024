@@ -10,7 +10,7 @@ function PresentationComponent({ handleOnClick }) {
     <section className="displaySection presentationSection">
       <article className="textPresentation">
         Hola, soy <span className="highlight">Borja López Díaz</span>. <br />
-        <p>Soy desarrollador web full stack</p>
+        <p>Desarrollador web full stack</p>
       </article>
 
       <ScrollLink
